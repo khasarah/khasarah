@@ -1,0 +1,154 @@
+* {
+	font-family: "Nunito", sans-serif;
+	color: rgba(232, 232, 232, 1);
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 0 0 0.1em rgba(255, 255, 255, 0.4);
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	cursor: url("cursor.png"), pointer;
+}
+
+
+body {
+	overflow: hidden;
+	background: #333333;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24));  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	cursor: default;
+}
+
+#backg {
+	background: rgba(0, 0, 0, .4);
+	border-radius: 5px;
+	padding: 0 1em 1em;
+	box-shadow: 0 0 1em rgba(0, 0, 0, .7);
+	transition: 0.2s;
+}
+
+header {
+	margin-top: 2em; 
+	display: block;
+	font-size: 2em;
+}
+.logo {
+	color: #fff;
+	font-size: 3em;
+	transition: 0.7s;
+}
+
+*::selection {
+	background: rgba(255, 255, 255, .3);
+	color: rgba(0, 0, 0, .7);
+}
+
+::-webkit-scrollbar {
+    width: 0
+}
+
+.date {
+	margin: 0;
+	padding: 0; 
+	font-size: 0.5em;
+}
+
+content {
+  padding-bottom: 90px;
+}
+
+p {
+	transition: 0.4s;
+}
+
+p:hover {
+	color: rgba(255, 255, 255, 1);
+	text-shadow: 0 0 0.3em rgba(0, 0, 0, 1), 0 0 0.1em rgba(255, 255, 255, 1)
+}
+
+footer {
+	transition: .2s;
+	position: fixed;
+	background: rgba(0, 0, 0, .4);
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+	padding-top: 10px;
+	box-shadow: 0 0 1em rgba(0, 0, 0, .7);
+
+}
+
+footer:hover p:hover {
+	text-shadow: 0 0 0.1em rgba(0, 0, 0, 1), 0 0 0.3em rgba(255, 255, 255, 1);
+
+}
+
+input {
+	background: rgba(0, 0, 0, .4);
+	box-shadow: 0 0 1em rgba(0, 0, 0, .7);
+	border: none;
+	transition: .2s;
+	border-radius: 8px;
+	padding: 3px;
+	width: 15em;
+	font-size: 1.2em;
+	margin-top: 1em;
+}
+
+input:focus {
+	outline: none
+}
+
+input:hover {
+	background: rgba(0, 0, 0, .5);
+	box-shadow: 0 0 1em rgba(0, 0, 0, .9);	
+}
+
+input:active {
+	background: rgba(0, 0, 0, .6);
+	box-shadow: 0 0 1.4em rgba(0, 0, 0, 1);	
+}
+
+#backg:hover {
+	background: rgba(0, 0, 0, .5);
+	box-shadow: 0 0 1em rgba(0, 0, 0, .9);	
+}
+
+#backg:active {
+	background: rgba(0, 0, 0, .6);
+	box-shadow: 0 0 1.4em rgba(0, 0, 0, 1);	
+}
+
+footer:hover {
+	background: rgba(0, 0, 0, .5);
+	box-shadow: 0 0 1em rgba(0, 0, 0, .9);	
+}
+
+footer:active {
+	background: rgba(0, 0, 0, .6);
+	box-shadow: 0 0 1.4em rgba(0, 0, 0, 1);	
+}
+
+img {
+	border: none;
+	border-radius: 9px;
+	transition: .4s;
+	margin: 10px;
+}
+
+img:hover {
+	transform: scale(1.1);
+}
+
+.gallery {
+	position: relative;
+	margin: 0 30px;
+	bottom: 300px;
+}
+
+.gallery #egoist{
+	float: right;
+}
+
+.gallery #inori{
+	float: left;
+}
