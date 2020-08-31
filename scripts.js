@@ -52,7 +52,7 @@ const errorWindow = (id) => {
 	`
 	if (p[0] < 1366 || p[1] < 625) {
 		if (p[0] < 392 || p[1] < 250) {
-			document.getElementById(id).innerHTML = "Your window resolution is to small for our website. :("
+			document.getElementById(id).innerHTML = "Sorry, your monitor does not support our site. You can try using scaling (CTRL +/-) or changing the resolution. :("
 		} else {
 			document.getElementById(id).innerHTML = small
 		}
