@@ -43,8 +43,19 @@ const discord = () => {
 const errorWindow = (id) => {
 	var p = [document.documentElement.clientWidth, document.documentElement.clientHeight]
 	console.log(p)
+	var small = `<div>
+	<p style="position: relative; padding-top: 15px">Bonsoir, mon cher</p>
+	<strong><p class="logo">× EG♡IST ×</p></strong>
+	<div><p id="time">Time</p><p id="date">Date</p></div></div>
+	<p><input type="button" onclick="link('https://discord.com/api/oauth2/authorize?client_id=698611254826106932&permissions=8&scope=bot')" value="Invite Inori"></p>
+	<p><input type="button" onclick="link('https://discord.com/invite/mUeqcpf')" value="Join Our Server"></p>
+	`
 	if (p[0] < 1366 || p[1] < 625) {
-		document.getElementById(id).innerHTML = "<strong><h1>Sorry, your monitor does not support our site. You can try using scaling (CTRL +/-) or changing the resolution.</h1></strong>"
+		if (p[0] < 392 || p[1] < 250) {
+			document.getElementById(id).innerHTML = "Your window resolution is to small for our website. :("
+		} else {
+			document.getElementById(id).innerHTML = small
+		}
 	}
 }
 

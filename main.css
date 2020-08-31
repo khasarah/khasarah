@@ -6,7 +6,6 @@
 	padding: 0;
 	text-align: center;
 	cursor: url("cursor.png"), pointer;
-	cursor: default;
 }
 
 
@@ -15,6 +14,7 @@ body {
 	background: #333333;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24));  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	cursor: default;
 }
 
 #backg {
@@ -91,7 +91,7 @@ input {
 	padding: 3px;
 	width: 15em;
 	font-size: 1.2em;
-	margin-top: 1em;
+	margin: 0.5em;
 }
 
 input:focus {
@@ -142,7 +142,7 @@ img:hover {
 .gallery {
 	position: relative;
 	margin: 0 30px;
-	bottom: 300px;
+	bottom: 200px;
 }
 
 .gallery #egoist{
