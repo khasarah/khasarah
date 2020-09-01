@@ -40,7 +40,7 @@ const discord = () => {
 	});
 }
 
-const errorWindow = (id, source, lres) => {
+const errorWindow = (id, source, lresh, lresw) => {
 	var p = [document.documentElement.clientWidth, document.documentElement.clientHeight]
 	console.log(p)
 	var small = `<div>
@@ -56,7 +56,7 @@ const errorWindow = (id, source, lres) => {
 		} else {
 			document.getElementById(id).innerHTML = small
 		}
-	} else if(p[0] === lres[0] && p[1] === lres[1]) {
+	} else if(p[0] === lresw && p[1] === lresh) {
 		   null
 	} else {
 		document.getElementById(id).innerHTML = source
